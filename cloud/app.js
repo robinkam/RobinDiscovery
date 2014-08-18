@@ -14,7 +14,17 @@ app.get('/hello', function(req, res) {
 
 
 app.get('/wechatCallback', function(req, res) {
-    res.render('wechatCallback', { echoStr: 'RobinKam```' });
+//    res.render('wechatCallback', { echoStr: 'RobinKam```' });
+    AV.Cloud.run("wechatCallback", req, {
+        success: function(data){
+            //调用成功，得到成功的应答data
+            console.log(data);
+        },
+        error: function(err){
+            //处理调用失败
+            console.log(err);
+        }
+    });
 });
 
 app.get('/wechatResponseMessage', function(req, res) {

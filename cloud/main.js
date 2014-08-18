@@ -16,15 +16,12 @@ AV.Cloud.define("wechatCallback", function(requst, response){
 
     var token = "RobinKam";
     var tmpArr = [token, timestamp, nonce];
-    tmpArr.sort();
-    var tmpStr = tmpArr.toString();
-//    tmpArr.forEach(function(element, index, array){
-//        tmpStr+=element;
-//    });
-    tmpStr = crypto.createHash(tmpStr);
+    var tmpStr = tmpArr.sort().join('');
+    tmpStr = require('crypto').createHash('sha1').update(tmpStr).digest('hex');
 
     if( tmpStr == signature ){
         console.log("Signature: "+echoStr);
+        response.success(echoStr);
     }else{
         console.log("Check Signature Failed");
     }
