@@ -47,8 +47,23 @@ app.get('/wechatCallback', function(req, res) {
     res.render('wechatCallback', {echoStr: echoStr});
 });
 
-app.get('/wechatResponseMessage*', function(req, res) {
-    res.render('wechatResponseMessage', { echoStr: 'RobinKam' });
+app.get('/wechatCallback/wechatResponseMessage', function(req, res) {
+//    res.render('wechatResponseMessage', { echoStr: 'RobinKam' });
+    var parseString = require('xml2js').parseString;
+    var xml = req.body.toString();
+//    var xml = '<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1357290913</CreateTime><MsgType><![CDATA[voice]]></MsgType><MediaId><![CDATA[media_id]]></MediaId><Format><![CDATA[Format]]></Format><MsgId>1234567890123456</MsgId><Content><![CDATA[this is a test]]></Content></xml>';
+//    res.send(xml);
+    parseString(xml, function (err, result) {
+        console.dir(result);
+        res.set('Content-Type', 'application/xml');
+        res.render('wechatResponseMessage', {
+            ToUserName: result.xml.ToUserName,
+            FromUserName: result.xml.FromUserName,
+            CreateTime: result.xml.CreateTime,
+            MsgType: result.xml.MsgType,
+            Content: result.xml.Content
+        });
+    });
 });
 
 // 最后，必须有这行代码来使 express 响应 HTTP 请求
