@@ -84,8 +84,8 @@ app.post('/wechatCallback/wechatResponseMessage', function(req, res) {
             console.dir(result);
             res.set('Content-Type', 'application/xml');
             res.render('wechatResponseMessage', {
-                ToUserName: result.xml.ToUserName,
-                FromUserName: result.xml.FromUserName,
+                ToUserName: result.xml.FromUserName,
+                FromUserName: result.xml.ToUserName,
                 CreateTime: result.xml.CreateTime,
                 MsgType: result.xml.MsgType,
                 Content: result.xml.Content
