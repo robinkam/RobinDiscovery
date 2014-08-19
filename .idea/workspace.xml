@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75e22018-aa77-44cf-a823-024beed3cec1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/cloud/wechat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/app.js" afterPath="$PROJECT_DIR$/cloud/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/main.js" afterPath="$PROJECT_DIR$/cloud/main.js" />
+    <list default="true" id="75e22018-aa77-44cf-a823-024beed3cec1" name="Default" comment="fixed issue in wechatResponseMessage handling logic.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RobinDiscovery.iws" />
@@ -31,8 +28,8 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloud/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48356807" vertical-offset="711" max-vertical-offset="1545">
-              <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.7183099" vertical-offset="711" max-vertical-offset="1545">
+              <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -285,7 +282,11 @@
       <created>1408442974666</created>
       <updated>1408442974666</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed issue in wechatResponseMessage handling logic.">
+      <created>1408466986119</created>
+      <updated>1408466986119</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -328,7 +329,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="added Wechat message handling logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="added Wechat message handling logic" />
+    <MESSAGE value="fixed issue in wechatResponseMessage handling logic." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed issue in wechatResponseMessage handling logic." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -454,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48356807" vertical-offset="711" max-vertical-offset="1545">
-          <caret line="68" column="18" selection-start-line="68" selection-start-column="18" selection-end-line="68" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.7183099" vertical-offset="711" max-vertical-offset="1545">
+          <caret line="78" column="45" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
           <folding />
         </state>
       </provider>
