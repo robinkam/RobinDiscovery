@@ -13,7 +13,7 @@ app.get('/hello', function(req, res) {
 });
 
 
-app.get('/wechatCallback', function(req, res) {
+app.get('/wechatCallback*', function(req, res) {
 //    AV.Cloud.run("wechatCallback", req, {
 //        success: function(data){
 //            //调用成功，得到成功的应答data
@@ -24,13 +24,13 @@ app.get('/wechatCallback', function(req, res) {
 //            console.log(err);
 //        }
 //    });
-    var echoStr = request.params.echostr;
+    var echoStr = req.query.echostr;
     console.log(echoStr);
 
     //valid signature , option
-    var signature = request.params.signature;
-    var timestamp = request.params.timestamp;
-    var nonce = request.params.nonce;
+    var signature = req.query.signature;
+    var timestamp = req.query.timestamp;
+    var nonce = req.query.nonce;
 
     var token = "RobinKam";
     var tmpArr = [token, timestamp, nonce];
@@ -39,14 +39,14 @@ app.get('/wechatCallback', function(req, res) {
 
     if( tmpStr == signature ){
         console.log("Signature: "+echoStr);
-        response.success(echoStr);
+        res.render('wechatCallback', {echoStr: echoStr});
     }else{
         console.log("Check Signature Failed");
     }
 //    res.render('wechatCallback', { echoStr: 'RobinKam```' });
 });
 
-app.get('/wechatResponseMessage', function(req, res) {
+app.get('/wechatResponseMessage*', function(req, res) {
     res.render('wechatResponseMessage', { echoStr: 'RobinKam' });
 });
 
