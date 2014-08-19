@@ -70,7 +70,7 @@ app.get('/wechatCallback', function(req, res) {
     }
 });
 
-app.post('/wechatCallback/wechatResponseMessage', function(req, res) {
+app.post('/wechatCallback', function(req, res) {
 //    res.render('wechatResponseMessage', { echoStr: 'RobinKam' });
     var parseString = xml2js.parseString;
     var xml = req.body;
