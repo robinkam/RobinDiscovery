@@ -4,7 +4,7 @@ var app = express();
 
 //var utils = require('express/node_modules/connect/lib/utils.js');
 var xml2js = require('xml2js');
-var wechat = require('./cloud/wechat.js');
+var wechat = require('cloud/wechat.js');
 
 // App 全局配置
 app.set('views','cloud/views');   // 设置模板目录
@@ -73,8 +73,8 @@ app.get('/wechatCallback', function(req, res) {
 app.post('/wechatCallback/wechatResponseMessage', function(req, res) {
 //    res.render('wechatResponseMessage', { echoStr: 'RobinKam' });
     var parseString = xml2js.parseString;
-//    var xml = req.body;
-    var xml = '<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1357290913</CreateTime><MsgType><![CDATA[voice]]></MsgType><MediaId><![CDATA[media_id]]></MediaId><Format><![CDATA[Format]]></Format><MsgId>1234567890123456</MsgId><Content><![CDATA[this is a test]]></Content></xml>';
+    var xml = req.body;
+//    var xml = '<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1357290913</CreateTime><MsgType><![CDATA[voice]]></MsgType><MediaId><![CDATA[media_id]]></MediaId><Format><![CDATA[Format]]></Format><MsgId>1234567890123456</MsgId><Content><![CDATA[this is a test]]></Content></xml>';
     console.dir(xml);
     parseString(xml, function (err, result) {
         if(err){
