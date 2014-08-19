@@ -13,7 +13,6 @@ AV.Cloud.define("wechatCallback", function(requst, response){
     var signature = request.params.signature;
     var timestamp = request.params.timestamp;
     var nonce = request.params.nonce;
-
     var token = "RobinKam";
     var tmpArr = [token, timestamp, nonce];
     var tmpStr = tmpArr.sort().join('');
