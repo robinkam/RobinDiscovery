@@ -2,47 +2,45 @@
 var express = require('express');
 var app = express();
 
+//var middlewares = require('./express-middlewares-js');
+//app.use('/weixin', middlewares.xmlBodyParser({
+//    type: 'text/xml'
+//}));
+
+var xmlBodyParser = require('./express-xml-parser');
+app.use('/weixin', xmlBodyParser({
+    type: 'text/xml',
+    limit: '1mb'
+}));
+
 //var utils = require('express/node_modules/connect/lib/utils.js');
 var util = require('util');
 var xml2js = require('xml2js');
 var wechat = require('cloud/wechat.js');
+//var myXMLBodyParser = require('cloud/myxmlbodyparser.js');
+
+var WechatClient = require('./nodejs-wechat');
+var opt = {
+    token: 'RobinKam',
+    url: '/weixin'
+};
+var wechatClient = new WechatClient(opt);
 
 // App 全局配置
 app.set('views','cloud/views');   // 设置模板目录
 app.set('view engine', 'ejs');    // 设置 template 引擎
 app.use(express.bodyParser());    // 读取请求 body 的中间件
-//app.use(xmlBodyParser);
+//app.use(myXMLBodyParser.xmlBodyParser());
 
-//function xmlBodyParser(req, res, next) {
-//    if (req._body) return next();
-//    req.body = req.body || {};
-//
-//    // ignore GET
-//    if ('GET' == req.method || 'HEAD' == req.method) return next();
-//
-//    // check Content-Type
-//    if ('text/xml' != utils.mime(req)) return next();
-//
-//    // flag as parsed
-//    req._body = true;
-//
-//    // parse
-//    var buf = '';
-//    req.setEncoding('utf8');
-//    req.on('data', function(chunk){ buf += chunk });
-//    req.on('end', function(){
-//        var parseString = xml2js.parseString;
-//        parseString(buf, function(err, json) {
-//            if (err) {
-//                err.status = 400;
-//                next(err);
-//            } else {
-//                req.body = json;
-//                next();
-//            }
-//        });
-//    });
-//};
+
+
+app.get('/weixin', wechatClient.verifyRequest.bind(wechatClient));
+app.post('/weixin', wechatClient.handleRequest.bind(wechatClient));
+
+wechatClient.on('text', function(session) {
+    session.replyTextMsg('Hello World');
+});
+
 
 // 使用 Express 路由 API 服务 /hello 的 HTTP GET 请求
 app.get('/hello', function(req, res) {
