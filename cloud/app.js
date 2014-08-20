@@ -76,7 +76,7 @@ app.post('/wechatCallback', function(req, res) {
     var xml = req.body;
 //    var xml = '<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1357290913</CreateTime><MsgType><![CDATA[voice]]></MsgType><MediaId><![CDATA[media_id]]></MediaId><Format><![CDATA[Format]]></Format><MsgId>1234567890123456</MsgId><Content><![CDATA[this is a test]]></Content></xml>';
     console.dir(xml);
-    parseString(xml, function (err, result) {
+    parseString(xml.body, function (err, result) {
         if(err){
             console.dir(err);
             res.end();

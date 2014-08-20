@@ -29,8 +29,8 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloud/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38967136" vertical-offset="831" max-vertical-offset="1545">
-              <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.57746476" vertical-offset="801" max-vertical-offset="1545">
+              <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -299,7 +299,11 @@
       <created>1408468267600</created>
       <updated>1408468267600</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change the route to /wechatCallback instead of /wechatCallback/wechatResponseMessage">
+      <created>1408468561719</created>
+      <updated>1408468561719</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -346,7 +350,8 @@
     <MESSAGE value="update the workspace file to include the wechat.js module." />
     <MESSAGE value="fixed the cannot find module './cloud/wechat.js' issue." />
     <MESSAGE value="send response to fan's message." />
-    <option name="LAST_COMMIT_MESSAGE" value="send response to fan's message." />
+    <MESSAGE value="change the route to /wechatCallback instead of /wechatCallback/wechatResponseMessage" />
+    <option name="LAST_COMMIT_MESSAGE" value="change the route to /wechatCallback instead of /wechatCallback/wechatResponseMessage" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -472,8 +477,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38967136" vertical-offset="831" max-vertical-offset="1545">
-          <caret line="72" column="25" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.57746476" vertical-offset="801" max-vertical-offset="1545">
+          <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
           <folding />
         </state>
       </provider>
