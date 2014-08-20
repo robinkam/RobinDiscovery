@@ -72,12 +72,12 @@ app.get('/wechatCallback', function(req, res) {
 
 app.post('/wechatCallback', function(req, res) {
     var parseString = xml2js.parseString;
-    console.log('The request headers: '+req.headers);
-    console.log('The request query: '+req.query);
-    console.log('The request body: '+req.body);
+    console.log('The request headers: '+util.inspect(req.headers));
+    console.log('The request query: '+util.inspect(req.query));
+    console.log('The request body: '+util.inspect(req.body));
     var xml = req.body;
 //    var xml = '<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1357290913</CreateTime><MsgType><![CDATA[voice]]></MsgType><MediaId><![CDATA[media_id]]></MediaId><Format><![CDATA[Format]]></Format><MsgId>1234567890123456</MsgId><Content><![CDATA[this is a test]]></Content></xml>';
-    console.log('Got post body: '+xml);
+    console.log('Got post body: '+util.inspect(xml));
     parseString(xml.body, function (err, result) {
         if(err){
             console.log('XML Parsing Error: ');
