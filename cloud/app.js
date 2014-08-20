@@ -3,6 +3,7 @@ var express = require('express');
 var app = express();
 
 //var utils = require('express/node_modules/connect/lib/utils.js');
+var util = require('util');
 var xml2js = require('xml2js');
 var wechat = require('cloud/wechat.js');
 
