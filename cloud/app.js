@@ -63,11 +63,11 @@ app.get('/wechatCallback', function(req, res) {
 
     if( wechat.isLegel(signature, timestamp, nonce, token) ){
         console.log("Signature: "+echoStr);
-        res.render('wechatCallback', {echoStr: echoStr});
     }else{
         console.log("Check Signature Failed");
-        res.end();
     }
+//        res.end();
+    res.render('wechatCallback', {echoStr: echoStr});
 });
 
 app.post('/wechatCallback', function(req, res) {
