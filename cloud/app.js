@@ -54,35 +54,36 @@ app.get('/hello', function(req, res) {
 
 
 app.get('/wechatCallback', function(req, res) {
-    var echoStr = req.query.echostr;
-    //valid signature , option
-    var signature = req.query.signature;
-    var timestamp = req.query.timestamp;
-    var nonce = req.query.nonce;
-    var token = "RobinKam";
-
-    if( wechat.isLegel(signature, timestamp, nonce, token) ){
-        console.log("Signature: "+echoStr);
+    var signature=req.query.signature;
+    var timestamp=req.query.timestamp;
+    var nonce=req.query.nonce;
+    var echostr=req.query.echostr;
+    var check=false;
+    check=wechat.isLegel(signature,timestamp,nonce,token);//替换成你的token
+    console.log('Verify Signature Result: '+check);
+    if(check){
+        res.write(echostr);
     }else{
-        console.log("Check Signature Failed");
+        res.write("Signature validation failed.");
     }
-//        res.end();
-    res.render('wechatCallback', {echoStr: echoStr});
+    res.end();
 });
 
 app.post('/wechatCallback', function(req, res) {
-//    res.render('wechatResponseMessage', { echoStr: 'RobinKam' });
     var parseString = xml2js.parseString;
     var xml = req.body;
 //    var xml = '<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1357290913</CreateTime><MsgType><![CDATA[voice]]></MsgType><MediaId><![CDATA[media_id]]></MediaId><Format><![CDATA[Format]]></Format><MsgId>1234567890123456</MsgId><Content><![CDATA[this is a test]]></Content></xml>';
+    console.log('Got post body: ');
     console.dir(xml);
     parseString(xml.body, function (err, result) {
         if(err){
+            console.log('XML Parsing Error: ');
             console.dir(err);
-            res.end();
+            res.write('XML to JSON failed with Error: '+console.dir(err));
         }else{
+            console.log('XML to JSON Result: ')
             console.dir(result);
-            res.set('Content-Type', 'application/xml');
+//            res.set('Content-Type', 'application/xml');
             res.render('wechatResponseMessage', {
                 ToUserName: result.xml.FromUserName,
                 FromUserName: result.xml.ToUserName,
@@ -91,6 +92,7 @@ app.post('/wechatCallback', function(req, res) {
                 Content: result.xml.Content
             });
         }
+        res.end();
     });
 });
 
