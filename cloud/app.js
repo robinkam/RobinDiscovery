@@ -55,6 +55,7 @@ app.get('/hello', function(req, res) {
 
 
 app.get('/wechatCallback*', function(req, res) {
+    console.log('Handling GET request...');
     var token = 'RobinKam';
     var signature=req.query.signature;
     var timestamp=req.query.timestamp;
@@ -72,7 +73,10 @@ app.get('/wechatCallback*', function(req, res) {
 });
 
 app.post('/wechatCallback', function(req, res) {
+    console.log('Handling POST request...');
+    console.log('The request original URL: '+req.originalUrl);
     console.log('The request headers: '+util.inspect(req.headers));
+    console.log('The request params:'+util.inspect(req.params))
     console.log('The request query: '+util.inspect(req.query));
     console.log('The request body: '+util.inspect(req.body));
 
