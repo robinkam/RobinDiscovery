@@ -54,7 +54,7 @@ app.get('/hello', function(req, res) {
 });
 
 
-app.get('/wechatCallback*', function(req, res) {
+app.get('/wechatCallback', function(req, res) {
     console.log('Handling GET request...');
     var token = 'RobinKam';
     var signature=req.query.signature;
