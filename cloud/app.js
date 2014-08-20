@@ -54,6 +54,7 @@ app.get('/hello', function(req, res) {
 
 
 app.get('/wechatCallback', function(req, res) {
+    var token = 'RobinKam';
     var signature=req.query.signature;
     var timestamp=req.query.timestamp;
     var nonce=req.query.nonce;
@@ -64,13 +65,15 @@ app.get('/wechatCallback', function(req, res) {
     if(check){
         res.write(echostr);
     }else{
-        res.write("Signature validation failed.");
+        res.write('Signature validation failed.');
     }
     res.end();
 });
 
 app.post('/wechatCallback', function(req, res) {
     var parseString = xml2js.parseString;
+    console.log('The request object: ');
+    console.log(req);
     var xml = req.body;
 //    var xml = '<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1357290913</CreateTime><MsgType><![CDATA[voice]]></MsgType><MediaId><![CDATA[media_id]]></MediaId><Format><![CDATA[Format]]></Format><MsgId>1234567890123456</MsgId><Content><![CDATA[this is a test]]></Content></xml>';
     console.log('Got post body: ');
