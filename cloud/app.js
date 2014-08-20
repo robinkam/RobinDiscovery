@@ -72,7 +72,7 @@ app.get('/wechatCallback*', function(req, res) {
     res.end();
 });
 
-app.post('/wechatCallback', function(req, res) {
+app.post('/wechatCallback1', function(req, res) {
     console.log('Handling POST request...');
     console.log('The request original URL: '+req.originalUrl);
     console.log('The request headers: '+util.inspect(req.headers));
