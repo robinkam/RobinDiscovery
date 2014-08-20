@@ -13,7 +13,7 @@ app.use(express.bodyParser());    // 读取请求 body 的中间件
 
 
 var weixin = require('cloud/node-weixin/index.js').init({
-    url: '/',
+    url: '/wechat',
     token: 'RobinKam'
 });
 
