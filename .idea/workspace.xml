@@ -29,8 +29,8 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloud/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28169015" vertical-offset="930" max-vertical-offset="1620">
-              <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.7276995" vertical-offset="825" max-vertical-offset="1680">
+              <caret line="86" column="47" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -329,7 +329,11 @@
       <created>1408510827559</created>
       <updated>1408510827559</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="log request object to debug">
+      <created>1408511994001</created>
+      <updated>1408511994001</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -381,7 +385,8 @@
     <MESSAGE value="correct the response message format." />
     <MESSAGE value="try to fix the issue that no response from Wechat" />
     <MESSAGE value="refined the console log for debug." />
-    <option name="LAST_COMMIT_MESSAGE" value="refined the console log for debug." />
+    <MESSAGE value="log request object to debug" />
+    <option name="LAST_COMMIT_MESSAGE" value="log request object to debug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -507,8 +512,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28169015" vertical-offset="930" max-vertical-offset="1620">
-          <caret line="74" column="35" selection-start-line="74" selection-start-column="35" selection-end-line="74" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.7276995" vertical-offset="825" max-vertical-offset="1680">
+          <caret line="86" column="47" selection-start-line="86" selection-start-column="47" selection-end-line="86" selection-end-column="47" />
           <folding />
         </state>
       </provider>
