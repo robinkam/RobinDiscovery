@@ -1,263 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75e22018-aa77-44cf-a823-024beed3cec1" name="Default" comment="removed the node_modules folder;&#10;use simple way to handle xml post body parsing.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/fixture/image.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/fixture/movie.mp4" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/fixture/pic.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/fixture/test.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/figures/wechat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/.gitmodules" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/buffer-concat/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/dethroy/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/.npmignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/AUTHORS" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/History.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/LICENSE.APACHE2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/LICENSE.MIT" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/buffer-concat/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/MIT-License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/MIT_License" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/dethroy/Makefile" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/README.en.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/buffer-concat/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/dethroy/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/debug/Readme.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/lib/address.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/figures/api.graffle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_custom_service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_customer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/api_customer.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_feedback.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_group.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_mass_send.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/api_mass_send.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_media.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_pay.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_qrcode.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_express.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_goods.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_group.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_shelf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_stock.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_template.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/api_user.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/auto-destroy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/backslash.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/backslash.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/benchmark.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/big-not-pretty.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/buffer-overrun.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/lib/bufferhelper.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/buffering.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/case.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/cdata-chunked.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/cdata-end-split.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/cdata-fake-end.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/cdata-multiple.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/cdata.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/examples/client.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/comments.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/comments.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/common.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/support/compile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/config.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/benchmark/date_YYYYMMDD.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/benchmark/date_format.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/debug/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/debug/lib/debug.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/double-quote.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/double-quote.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/ejs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/lib/ejs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/ejs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/ejs.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/end.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/error.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/error.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/example.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/fail.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/lib/filters.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/lib/formstream.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/examples/functions.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/examples/functions.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/get-products.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/get_message.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/benchmark/get_paramnames.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/hello-world.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/include.css.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/include.css.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/include.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/include.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/buffer-concat/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/dethroy/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/issue-23.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/issue-30.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/issue-35.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/issue-47.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/issue-49.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/includes/menu/item.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/examples/list.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/examples/list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/list.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/list.test2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/benchmark/md5.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/includes/menu-item.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/menu.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/menu.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/menu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/fixture/menu.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/messed.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/messed.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/mime.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/types/mime.types" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/newlines.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/newlines.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/no.newlines.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/no.newlines.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/types/node.types" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/not-pretty.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/oauth.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/oauth.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/buffer-concat/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/dethroy/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/debug/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/para.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/parse.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/parser-position.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/test/pause-end.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/pay.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/pet.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/pretty-print.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/readme.markdown" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/reply.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/lib/sax.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/script.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/self-closing-child-strict.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/self-closing-child.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/self-closing-tag.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/session.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/session.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/shopping.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/single-quote.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/single-quote.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/stray-ending.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/strict.dtd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/support.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/switch-bench.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/talk.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/test/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/trailing-non-whitespace.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/unquoted.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/lib/urllib.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/user.ejs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/lib/utility.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/lib/utils.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/figures/wechat.graffle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/lib/wechat.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/wechat.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/wechat2.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/wechat3.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/test/wechat_nohandle.test.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/lib/xml2js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-issue-41.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-rebinding.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-strict.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-unbound.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-ns.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-prefix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-redefine.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cloud/wechat.js" afterPath="$PROJECT_DIR$/cloud/myWeixinAPI.js" />
+    <list default="true" id="75e22018-aa77-44cf-a823-024beed3cec1" name="Default" comment="use a third party module for wechat API.">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/MIT-License" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/README.en.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/figures/api.graffle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/figures/wechat.graffle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/figures/wechat.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_custom_service.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_customer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_feedback.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_group.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_mass_send.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_media.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_pay.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_qrcode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_common.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_express.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_goods.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_group.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_order.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_shelf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_shop_stock.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_template.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/api_user.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/oauth.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/session.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/util.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/lib/wechat.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/MIT_License" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/lib/bufferhelper.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/bufferhelper/test/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/.gitmodules" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/benchmark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/ejs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/ejs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/examples/client.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/examples/functions.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/examples/functions.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/examples/list.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/examples/list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/lib/ejs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/lib/filters.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/lib/utils.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/support/compile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/ejs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/backslash.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/backslash.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/comments.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/comments.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/double-quote.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/double-quote.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/error.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/error.out" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/fail.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/include.css.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/include.css.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/include.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/include.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/includes/menu-item.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/includes/menu/item.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/menu.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/menu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/messed.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/messed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/newlines.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/newlines.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/no.newlines.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/no.newlines.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/para.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/pet.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/single-quote.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/single-quote.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/style.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/ejs/test/fixtures/user.ejs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/lib/formstream.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/buffer-concat/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/buffer-concat/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/buffer-concat/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/buffer-concat/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/buffer-concat/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/dethroy/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/dethroy/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/dethroy/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/dethroy/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/dethroy/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/mime.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/types/mime.types" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/mime/types/node.types" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/LICENSE.APACHE2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/LICENSE.MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/auto-destroy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/buffering.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/end.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/node_modules/through/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/readme.markdown" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/node_modules/pause-stream/test/pause-end.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/formstream/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/lib/urllib.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/debug/Readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/debug/debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/debug/lib/debug.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/debug/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/default-user-agent/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/benchmark/date_YYYYMMDD.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/benchmark/date_format.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/benchmark/get_paramnames.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/benchmark/md5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/lib/utility.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/History.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/lib/address.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/node_modules/address/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/node_modules/utility/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/node_modules/digest-header/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/urllib/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/.npmignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/lib/xml2js.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/AUTHORS" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/big-not-pretty.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/example.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/get-products.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/hello-world.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/not-pretty.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/pretty-print.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/shopping.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/strict.dtd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/switch-bench.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/examples/test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/lib/sax.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/buffer-overrun.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/case.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/cdata-chunked.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/cdata-end-split.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/cdata-fake-end.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/cdata-multiple.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/cdata.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/issue-23.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/issue-30.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/issue-35.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/issue-47.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/issue-49.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/parser-position.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/script.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/self-closing-child-strict.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/self-closing-child.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/self-closing-tag.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/stray-ending.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/trailing-non-whitespace.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/unquoted.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-issue-41.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-rebinding.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-strict.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-unbound.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-ns.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-prefix-attribute.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-prefix.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/node_modules/sax/test/xmlns-xml-default-redefine.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/node_modules/xml2js/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/api_customer.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/api_mass_send.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/common.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/config.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/fixture/image.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/fixture/menu.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/fixture/movie.mp4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/fixture/pic.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/fixture/test.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/get_message.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/list.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/list.test2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/oauth.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/parse.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/pay.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/reply.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/session.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/support.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/talk.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/wechat.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/wechat2.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/wechat3.test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/wechat/test/wechat_nohandle.test.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/app.js" afterPath="$PROJECT_DIR$/cloud/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -285,8 +284,78 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloud/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3286385" vertical-offset="0" max-vertical-offset="1560">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.55944055" vertical-offset="60" max-vertical-offset="1350">
+              <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud/node-weixin/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8505">
+              <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sha1.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud/node-weixin/sha1.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud/node-weixin/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+              <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="weixinMsgXml.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud/node-weixin/weixinMsgXml.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bufferhelper.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud/node-weixin/bufferhelper.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="charenc.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud/node-weixin/charenc.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="crypt.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cloud/node-weixin/crypt.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -313,6 +382,10 @@
         <option value="$PROJECT_DIR$/cloud/myxmlbodyparser.js" />
         <option value="$PROJECT_DIR$/cloud/xmlBodyParser.js" />
         <option value="$PROJECT_DIR$/cloud/wechat.js" />
+        <option value="$PROJECT_DIR$/cloud/node-wechat/node-wechat.js" />
+        <option value="$PROJECT_DIR$/cloud/node-weixin/index.js" />
+        <option value="$PROJECT_DIR$/cloud/node-weixin/sha1.js" />
+        <option value="$PROJECT_DIR$/cloud/node-weixin/util.js" />
         <option value="$PROJECT_DIR$/cloud/app.js" />
       </list>
     </option>
@@ -403,7 +476,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="wechat" />
+              <option name="myItemId" value="node-weixin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -432,6 +505,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RobinDiscovery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RobinDiscovery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cloud" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="node-weixin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -622,7 +713,11 @@
       <created>1408552201011</created>
       <updated>1408552201011</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="use a third party module for wechat API.">
+      <created>1408556237484</created>
+      <updated>1408556237484</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -651,14 +746,14 @@
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.49963742" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.49963742" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794118" sideWeight="0.49963742" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32794118" sideWeight="0.49963742" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22987673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22987673" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794118" sideWeight="0.5003626" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32794118" sideWeight="0.5003626" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32794118" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.49963742" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -708,7 +803,8 @@
     <MESSAGE value="refined the logic in source code." />
     <MESSAGE value="added 2 node modules" />
     <MESSAGE value="removed the node_modules folder;&#10;use simple way to handle xml post body parsing." />
-    <option name="LAST_COMMIT_MESSAGE" value="removed the node_modules folder;&#10;use simple way to handle xml post body parsing." />
+    <MESSAGE value="use a third party module for wechat API." />
+    <option name="LAST_COMMIT_MESSAGE" value="use a third party module for wechat API." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -802,14 +898,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/global.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1433121" vertical-offset="0" max-vertical-offset="628">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud/views/wechatCallback.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
@@ -850,10 +938,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/global.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2962963" vertical-offset="0" max-vertical-offset="405">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/node-weixin/bufferhelper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/node-weixin/charenc.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/node-weixin/crypt.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/node-weixin/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8505">
+          <caret line="15" column="46" selection-start-line="15" selection-start-column="46" selection-end-line="15" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/node-weixin/sha1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1320">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/node-weixin/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="690">
+          <caret line="7" column="46" selection-start-line="7" selection-start-column="46" selection-end-line="7" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/node-weixin/weixinMsgXml.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1185">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cloud/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3286385" vertical-offset="0" max-vertical-offset="1560">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.55944055" vertical-offset="60" max-vertical-offset="1350">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
         </state>
       </provider>
