@@ -87,7 +87,6 @@ app.post('/wechatCallback', function(req, res) {
             res.write('Signature validation failed.');
         }
         res.end();
-        return;
     }
     var parseString = xml2js.parseString;
     console.log('The request headers: '+util.inspect(req.headers));
