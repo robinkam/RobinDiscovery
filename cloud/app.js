@@ -72,6 +72,10 @@ app.get('/wechatCallback', function(req, res) {
 });
 
 app.post('/wechatCallback', function(req, res) {
+    console.log('The request headers: '+util.inspect(req.headers));
+    console.log('The request query: '+util.inspect(req.query));
+    console.log('The request body: '+util.inspect(req.body));
+
     if(req.query.signature){
         var token = 'RobinKam';
         var signature=req.query.signature;
@@ -82,16 +86,14 @@ app.post('/wechatCallback', function(req, res) {
         check=wechat.isLegel(signature,timestamp,nonce,token);//替换成你的token
         console.log('Verify Signature Result: '+check);
         if(check){
-            res.write(echostr);
+            res.render('wechatCallback', {echostr: echostr});
         }else{
             res.write('Signature validation failed.');
         }
         res.end();
     }
+
     var parseString = xml2js.parseString;
-    console.log('The request headers: '+util.inspect(req.headers));
-    console.log('The request query: '+util.inspect(req.query));
-    console.log('The request body: '+util.inspect(req.body));
     var xml = req.body;
 //    var xml = '<xml><ToUserName><![CDATA[toUser]]></ToUserName><FromUserName><![CDATA[fromUser]]></FromUserName><CreateTime>1357290913</CreateTime><MsgType><![CDATA[voice]]></MsgType><MediaId><![CDATA[media_id]]></MediaId><Format><![CDATA[Format]]></Format><MsgId>1234567890123456</MsgId><Content><![CDATA[this is a test]]></Content></xml>';
     console.log('Got post body: '+util.inspect(xml));
