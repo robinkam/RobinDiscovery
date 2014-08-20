@@ -17,9 +17,19 @@ function isLegel(signature,timestamp,nonce,token){
     }
 }
 
+function isSignatureValid(req){
+    var token = 'RobinKam';
+    var signature=req.query.signature;
+    var timestamp=req.query.timestamp;
+    var nonce=req.query.nonce;
+    var result = isLegel(signature, timestamp, nonce, token);
+    return result;
+}
+
 function processMessage(data,response){
 
 }
 
 module.exports.isLegel=isLegel;
+module.exports.isSignatureValid=isSignatureValid;
 module.exports.processMessage=processMessage;

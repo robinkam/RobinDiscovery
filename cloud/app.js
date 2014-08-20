@@ -56,15 +56,10 @@ app.get('/hello', function(req, res) {
 
 app.get('/wechatCallback', function(req, res) {
     console.log('Handling GET request...');
-    var token = 'RobinKam';
-    var signature=req.query.signature;
-    var timestamp=req.query.timestamp;
-    var nonce=req.query.nonce;
     var echostr=req.query.echostr;
-    var check=false;
-    check=wechat.isLegel(signature,timestamp,nonce,token);//替换成你的token
-    console.log('Verify Signature Result: '+check);
-    if(check){
+    var isSignatureValid=wechat.isSignatureValid(req);
+    console.log('Verify Signature Result: '+isSignatureValid);
+    if(isSignatureValid){
         res.write(echostr);
     }else{
         res.write('Signature validation failed.');
@@ -72,13 +67,21 @@ app.get('/wechatCallback', function(req, res) {
     res.end();
 });
 
-app.post('/wechatCallback1', function(req, res) {
+app.post('/wechatCallback', function(req, res) {
     console.log('Handling POST request...');
     console.log('The request original URL: '+req.originalUrl);
     console.log('The request headers: '+util.inspect(req.headers));
-    console.log('The request params:'+util.inspect(req.params))
+    console.log('The request params:'+util.inspect(req.params));
     console.log('The request query: '+util.inspect(req.query));
     console.log('The request body: '+util.inspect(req.body));
+
+    var isSignatureValid=wechat.isSignatureValid(req);
+    console.log('Verify Signature Result: '+isSignatureValid);
+    if(!isSignatureValid){
+        res.write('Signature validation failed.');
+        res.end();
+        return;
+    }
 
     var parseString = xml2js.parseString;
     var xml = req.body;
