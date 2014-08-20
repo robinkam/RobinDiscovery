@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75e22018-aa77-44cf-a823-024beed3cec1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/app.js" afterPath="$PROJECT_DIR$/cloud/app.js" />
+    <list default="true" id="75e22018-aa77-44cf-a823-024beed3cec1" name="Default" comment="correct the response message format.">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/views/wechatResponseMessage.ejs" afterPath="$PROJECT_DIR$/cloud/views/wechatResponseMessage.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RobinDiscovery.iws" />
@@ -26,10 +26,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57746476" vertical-offset="801" max-vertical-offset="1545">
+            <state vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1545">
               <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
               <folding />
             </state>
@@ -56,6 +56,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="wechatResponseMessage.ejs" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cloud/views/wechatResponseMessage.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1433121" vertical-offset="0" max-vertical-offset="628">
+              <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindManager">
@@ -71,10 +81,10 @@
       <list>
         <option value="$PROJECT_DIR$/cloud/views/weixinverify.ejs" />
         <option value="$PROJECT_DIR$/cloud/views/wechatCallback.ejs" />
-        <option value="$PROJECT_DIR$/cloud/views/wechatResponseMessage.ejs" />
         <option value="$PROJECT_DIR$/cloud/main.js" />
         <option value="$PROJECT_DIR$/cloud/wechat.js" />
         <option value="$PROJECT_DIR$/cloud/app.js" />
+        <option value="$PROJECT_DIR$/cloud/views/wechatResponseMessage.ejs" />
       </list>
     </option>
   </component>
@@ -303,7 +313,11 @@
       <created>1408468561719</created>
       <updated>1408468561719</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixed the xml parsing issue.">
+      <created>1408500584910</created>
+      <updated>1408500584910</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -351,7 +365,9 @@
     <MESSAGE value="fixed the cannot find module './cloud/wechat.js' issue." />
     <MESSAGE value="send response to fan's message." />
     <MESSAGE value="change the route to /wechatCallback instead of /wechatCallback/wechatResponseMessage" />
-    <option name="LAST_COMMIT_MESSAGE" value="change the route to /wechatCallback instead of /wechatCallback/wechatResponseMessage" />
+    <MESSAGE value="fixed the xml parsing issue." />
+    <MESSAGE value="correct the response message format." />
+    <option name="LAST_COMMIT_MESSAGE" value="correct the response message format." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -451,14 +467,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cloud/views/wechatResponseMessage.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1910828" vertical-offset="0" max-vertical-offset="628">
-          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cloud/wechat.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
@@ -477,8 +485,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57746476" vertical-offset="801" max-vertical-offset="1545">
+        <state vertical-scroll-proportion="0.0" vertical-offset="801" max-vertical-offset="1545">
           <caret line="78" column="24" selection-start-line="78" selection-start-column="24" selection-end-line="78" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud/views/wechatResponseMessage.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1433121" vertical-offset="0" max-vertical-offset="628">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
           <folding />
         </state>
       </provider>
