@@ -5,29 +5,26 @@ AV.Cloud.define("hello", function(request, response) {
   response.success("Hello world!");
 });
 
-AV.Cloud.define("wechatCallback", function(requst, response){
-    var echoStr = request.params.echostr;
-    console.log(echoStr);
-
-    //valid signature , option
-    var signature = request.params.signature;
-    var timestamp = request.params.timestamp;
-    var nonce = request.params.nonce;
-    var token = "RobinKam";
-    var tmpArr = [token, timestamp, nonce];
-    var tmpStr = tmpArr.sort().join('');
-    tmpStr = require('crypto').createHash('sha1').update(tmpStr).digest('hex');
-
-    if( tmpStr == signature ){
-        console.log("Signature: "+echoStr);
-        response.success(echoStr);
-    }else{
-        console.log("Check Signature Failed");
-    }
-
-
+AV.Cloud.define("Logger", function(request, response) {
+    console.log(request.params);
+    response.success();
 });
 
-AV.Cloud.define("wechatResonseMessage", function(requst, response){
+AV.Cloud.define("savePictureForWechatUser", function(requst, response){
+    var file = AV.File.withURL('photo.jpg', request.params.PicURL)
+    file.save().then(function() {
+        // The file has been saved to AV.
+        var avObject = new AV.Object("WechatUserAsset");
+        avObject.set("userId", "Joe Smith");
+        avObject.set("type", 'image');
+        avObject.set("asset", file);
+        avObject.save();
+    }, function(error) {
+        // The file either could not be read, or could not be saved to AV.
+        console.log('Error in Cloud Function (savePictureForWechatUser): '+error);
+    });;
+});
+
+AV.Cloud.define("getPictureByWechatUser", function(requst, response){
 
 });

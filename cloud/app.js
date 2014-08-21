@@ -2,9 +2,9 @@
 var express = require('express');
 var app = express();
 
-var util = require('util');
 var myWeixinAPI = require('cloud/myWeixinAPI.js');
-var weixinAPI = require('cloud/node-weixin/weixinAPI.js')
+var weixinAPI = require('cloud/weixinAPI.js')
+//var weixinAPI = require('node-weixin');
 
 // App 全局配置
 app.set('views','cloud/views');   // 设置模板目录
@@ -25,20 +25,14 @@ app.get('/weixin', function(req, res){
 });
 
 app.post('/weixin', function(req, res){
-    console.log('Handling POST request to /weixin...');
-    console.log('The request original URL: '+req.originalUrl);
-    console.log('The request headers: '+util.inspect(req.headers));
-    console.log('The request query: '+util.inspect(req.query));
+    myWeixinAPI.logRequestMainContent(req);
+    myWeixinAPI.validateSignature(req, res);
 
-    var isSignatureValid=myWeixinAPI.isSignatureValid(req);
-    console.log('Verify Signature Result: '+isSignatureValid);
-    if(!isSignatureValid){
-        res.write('Signature validation failed.');
-        res.end();
-        return;
+    try{
+        weixinAPI.msg(req, res);
+    }catch (error){
+        console.log('Error when executing weixinAPI.msg(req, res);\n'+error);
     }
-
-    weixinAPI.msg(req, res);
 });
 
 app.get('/wechatCallback', function(req, res) {
@@ -55,26 +49,9 @@ app.get('/wechatCallback', function(req, res) {
 });
 
 app.post('/wechatCallback', function(req, res) {
-    console.log('Handling POST request...');
-    console.log('The request original URL: '+req.originalUrl);
-    console.log('The request headers: '+util.inspect(req.headers));
-    console.log('The request query: '+util.inspect(req.query));
-
-    var isSignatureValid=myWeixinAPI.isSignatureValid(req);
-    console.log('Verify Signature Result: '+isSignatureValid);
-    if(!isSignatureValid){
-        res.write('Signature validation failed.');
-        res.end();
-        return;
-    }
-
-    var formData="";
-    req.on("data",function(data){
-        formData+=data;
-    });
-    req.on("end",function(){
-        myWeixinAPI.processMessage(formData, res);
-    });
+    myWeixinAPI.logRequestMainContent(req);
+    myWeixinAPI.validateSignature(req, res);
+    myWeixinAPI.processMessage(req, res);
 });
 
 // 最后，必须有这行代码来使 express 响应 HTTP 请求
