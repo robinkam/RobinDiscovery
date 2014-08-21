@@ -11,18 +11,20 @@ AV.Cloud.define("Logger", function(request, response) {
 });
 
 AV.Cloud.define("savePictureForWechatUser", function(requst, response){
-    var file = AV.File.withURL('photo.jpg', request.params.PicURL)
+    console.log('request.params');
+    console.dir(request.params);
+    var file = AV.File.withURL('photo.jpg', request.params.picUrl);
     file.save().then(function() {
         // The file has been saved to AV.
         var avObject = new AV.Object("WechatUserAsset");
-        avObject.set("userId", "Joe Smith");
+        avObject.set("userId", request.params.userId);
         avObject.set("type", 'image');
         avObject.set("asset", file);
         avObject.save();
     }, function(error) {
         // The file either could not be read, or could not be saved to AV.
         console.log('Error in Cloud Function (savePictureForWechatUser): '+error);
-    });;
+    });
 });
 
 AV.Cloud.define("getPictureByWechatUser", function(requst, response){

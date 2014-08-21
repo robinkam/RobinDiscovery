@@ -93,8 +93,7 @@ function processMessage(req,res){
 }
 
 function handleTextMsg(msg, res){
-    console.log('handleTextMsg: ');
-    console.dir(msg);
+    console.log('handleTextMsg: '+util.inspect(msg));
     if(msg.Content=='我的照片'){
         replyTextMessage(msg, res, '不好意思，这个功能还在开发中哦~');
     }else{
@@ -103,16 +102,35 @@ function handleTextMsg(msg, res){
 }
 
 function handleImageMsg(msg, res){
-    console.log('handleImageMsg: ');
-    console.dir(msg);
-    AV.Cloud.run('savePictureForWechatUser', {picUrl:result.xml.PicUrl, userId:result.xml.FromUserName}, {
-        success: function(result) {
-            res.set('Content-Type', 'text/xml');
-            replyTextMessage(msg, res, '图片已上传成功，回复"我的照片"查看最后一张上传的照片。')
-        },
-        error: function(error) {
-            console.log('AV.Cloud.run(savePictureForWechatUser) failed.');
-        }
+    console.log('handleImageMsg: '+util.inspect(msg));
+//    AV.Cloud.run('savePictureForWechatUser', {picUrl:msg.PicUrl, userId:msg.FromUserName}, {
+//        success: function(result) {
+//            replyTextMessage(msg, res, '图片已上传成功，回复"我的照片"查看最后一张上传的照片。')
+//        },
+//        error: function(error) {
+//            console.log('AV.Cloud.run(savePictureForWechatUser) failed with error: ');
+//            console.dir(error);
+//        }
+//    });
+    if(msg.PicUrl.count==0){
+        console.log('No PicUrl');
+        return;
+    }
+    var file = AV.File.withURL('photo.jpg', msg.PicUrl[0]);
+    file.save().then(function() {
+        // The file has been saved to AV.
+        var avObject = new AV.Object("WechatUserAsset");
+        avObject.set("userId", msg.FromUserName[0]);
+        avObject.set("type", 'image');
+        avObject.set("asset", file);
+        avObject.save().then(function(){
+            replyTextMessage(msg, res, '图片已上传成功，回复"我的照片"查看最后一张上传的照片。');
+        }, function(error){
+            console.log('Error when saving WechatUserAsset object: '+util.inspect(error));
+        });
+    }, function(error) {
+        // The file either could not be read, or could not be saved to AV.
+        console.log('Error when saving picture for Wechat user: '+util.inspect(error));
     });
 }
 
@@ -124,8 +142,7 @@ function replyTextMessage(msg, res, txt){
         MsgType: 'text',
         Content: txt
     };
-    console.log('replyTextMessage: ');
-    console.dir(reply);
+    console.log('replyTextMessage: '+util.inspect(reply));
     res.render('wechatResponseMessage', reply);
 }
 

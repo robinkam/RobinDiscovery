@@ -37,7 +37,6 @@ app.post('/weixin', function(req, res){
     }
 });
 
-
 app.get('/wechatCallback', function(req, res) {
     console.log('Handling GET request to /wechatCallback...');
     weixinAPI.token(req, res);
@@ -47,7 +46,11 @@ app.post('/wechatCallback', function(req, res) {
     console.log('Handling POST request to /wechatCallback...');
     myWeixinAPI.logRequestMainContent(req);
     myWeixinAPI.validateSignature(req, res);
-    myWeixinAPI.processMessage(req, res);
+    try {
+        myWeixinAPI.processMessage(req, res);
+    }catch (erro){
+        console.log('Error when executing myWeixinAPI.processMessage(req, res);\n'+error);
+    }
 });
 
 // 最后，必须有这行代码来使 express 响应 HTTP 请求
