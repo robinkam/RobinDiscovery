@@ -29,8 +29,8 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloud/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2760736" vertical-offset="240" max-vertical-offset="1140">
-              <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.69018406" vertical-offset="15" max-vertical-offset="1200">
+              <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -49,11 +49,21 @@
       <file leaf-file-name="weixinAPI.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud/node-weixin/weixinAPI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.846154" vertical-offset="1879" max-vertical-offset="2505">
-              <caret line="153" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="8" />
+            <state vertical-scroll-proportion="-15.423077" vertical-offset="1879" max-vertical-offset="2505">
+              <caret line="154" column="18" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
               <folding>
                 <element signature="e#163#180#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/node_modules/node-weixin/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="6128" max-vertical-offset="8505">
+              <caret line="406" column="17" selection-start-line="406" selection-start-column="17" selection-end-line="406" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -448,7 +458,11 @@
       <created>1408589116159</created>
       <updated>1408589116159</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add signature checking in handling post to /weixin.">
+      <created>1408589543632</created>
+      <updated>1408589543632</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -510,7 +524,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="correct the response message format." />
     <MESSAGE value="try to fix the issue that no response from Wechat" />
     <MESSAGE value="refined the console log for debug." />
     <MESSAGE value="log request object to debug" />
@@ -535,7 +548,8 @@
     <MESSAGE value="fixed a bug." />
     <MESSAGE value="add debug log." />
     <MESSAGE value="fixed a potential bug." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a potential bug." />
+    <MESSAGE value="add signature checking in handling post to /weixin." />
+    <option name="LAST_COMMIT_MESSAGE" value="add signature checking in handling post to /weixin." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -751,18 +765,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/node-weixin/weixinAPI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.846154" vertical-offset="1879" max-vertical-offset="2505">
-          <caret line="153" column="8" selection-start-line="153" selection-start-column="8" selection-end-line="153" selection-end-column="8" />
+        <state vertical-scroll-proportion="-15.423077" vertical-offset="1879" max-vertical-offset="2505">
+          <caret line="154" column="18" selection-start-line="154" selection-start-column="18" selection-end-line="154" selection-end-column="18" />
           <folding>
             <element signature="e#163#180#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/node-weixin/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6128" max-vertical-offset="8505">
+          <caret line="406" column="17" selection-start-line="406" selection-start-column="17" selection-end-line="406" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cloud/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2760736" vertical-offset="240" max-vertical-offset="1140">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.69018406" vertical-offset="15" max-vertical-offset="1200">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
           <folding />
         </state>
       </provider>

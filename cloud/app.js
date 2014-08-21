@@ -26,6 +26,10 @@ app.get('/weixin', function(req, res){
 
 app.post('/weixin', function(req, res){
     console.log('Handling POST request to /weixin...');
+    console.log('The request original URL: '+req.originalUrl);
+    console.log('The request headers: '+util.inspect(req.headers));
+    console.log('The request query: '+util.inspect(req.query));
+
     weixinAPI.token(req, res);
     weixinAPI.msg(req, res);
 });
