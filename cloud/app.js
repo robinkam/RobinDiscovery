@@ -25,6 +25,7 @@ app.get('/weixin', function(req, res){
 });
 
 app.post('/weixin', function(req, res){
+    console.log('Handling POST request to /weixin...');
     weixinAPI.msg(req, res);
 });
 
