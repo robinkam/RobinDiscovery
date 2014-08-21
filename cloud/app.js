@@ -35,6 +35,7 @@ app.post('/weixin', function(req, res){
     }
 });
 
+
 app.get('/wechatCallback', function(req, res) {
     console.log('Handling GET request...');
     var echostr=req.query.echostr;

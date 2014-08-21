@@ -335,29 +335,44 @@ Weixin.prototype.analysisMsg = function () {
         this.handleMsgErr();
     } else {
         var MsgType = this.msg.MsgType;
-        switch (MsgType) {
-            case 'text':
-                this.handleTextMsg();   //文本消息
-                break;
-            case 'image':
-                this.handleImageMsg();  //图片消息
-                break;
-            case 'voice':
-                this.handleVoiceMsg();  //语音消息
-                break;
-            case 'video':
-                this.handleVideoMsg();  //视频消息
-                break;
-            case 'location':
-                this.handleLocationMsg();   //地理位置消息
-                break;
-            case 'link':
-                this.handleLinkMsg();   //链接消息
-                break;
-            case 'event':
-                this.handleEventMsg();  //事件消息
-                break;
+        if(MsgType=='text'){
+            this.handleTextMsg();
+        }else if(MsgType=='image'){
+            this.handleImageMsg();
+        }else if(MsgType=='voice'){
+            this.handleVoiceMsg();
+        }else if(MsgType=='video'){
+            this.handleVideoMsg();
+        }else if(MsgType=='location'){
+            this.handleLocationMsg();
+        }else if(MsgType=='link'){
+            this.handleLinkMsg();
+        }else if(MsgType=='event'){
+            this.handleEventMsg();
         }
+//        switch (MsgType) {
+//            case 'text':
+//                this.handleTextMsg();   //文本消息
+//                break;
+//            case 'image':
+//                this.handleImageMsg();  //图片消息
+//                break;
+//            case 'voice':
+//                this.handleVoiceMsg();  //语音消息
+//                break;
+//            case 'video':
+//                this.handleVideoMsg();  //视频消息
+//                break;
+//            case 'location':
+//                this.handleLocationMsg();   //地理位置消息
+//                break;
+//            case 'link':
+//                this.handleLinkMsg();   //链接消息
+//                break;
+//            case 'event':
+//                this.handleEventMsg();  //事件消息
+//                break;
+//        }
     }
 };
 

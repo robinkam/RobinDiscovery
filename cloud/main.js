@@ -27,4 +27,5 @@ AV.Cloud.define("savePictureForWechatUser", function(requst, response){
 
 AV.Cloud.define("getPictureByWechatUser", function(requst, response){
 
+
 });

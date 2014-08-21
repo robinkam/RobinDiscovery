@@ -58,33 +58,34 @@ function processMessage(req,res){
                 console.dir(result);
 
                 var MsgType = result.xml.MsgType;
-                switch (MsgType) {
-                    case 'text':
-                        handleTextMsg(result.xml, res);   //文本消息
-                        break;
-                    case 'image':
-                        handleImageMsg(result.xml, res);  //图片消息
-                        break;
-                    case 'voice':
-                        this.handleVoiceMsg();  //语音消息
-                        break;
-                    case 'video':
-                        this.handleVideoMsg();  //视频消息
-                        break;
-                    case 'location':
-                        this.handleLocationMsg();   //地理位置消息
-                        break;
-                    case 'link':
-                        this.handleLinkMsg();   //链接消息
-                        break;
-                    case 'event':
-                        this.handleEventMsg();  //事件消息
-                        break;
+                if(MsgType=='text'){
+                    handleTextMsg(result.xml, res);   //文本消息
+                }else if(MsgType=='image'){
+                    handleImageMsg(result.xml, res);  //图片消息
                 }
-
-
-
-
+//                switch (MsgType) {
+//                    case 'text':
+//                        handleTextMsg(result.xml, res);   //文本消息
+//                        break;
+//                    case 'image':
+//                        handleImageMsg(result.xml, res);  //图片消息
+//                        break;
+//                    case 'voice':
+//                        this.handleVoiceMsg();  //语音消息
+//                        break;
+//                    case 'video':
+//                        this.handleVideoMsg();  //视频消息
+//                        break;
+//                    case 'location':
+//                        this.handleLocationMsg();   //地理位置消息
+//                        break;
+//                    case 'link':
+//                        this.handleLinkMsg();   //链接消息
+//                        break;
+//                    case 'event':
+//                        this.handleEventMsg();  //事件消息
+//                        break;
+//                }
             }
             res.end();
         });
@@ -92,6 +93,8 @@ function processMessage(req,res){
 }
 
 function handleTextMsg(msg, res){
+    console.log('handleTextMsg: ');
+    console.dir(msg);
     if(msg.Content=='我的照片'){
         replyTextMessage(msg, res, '不好意思，这个功能还在开发中哦~');
     }else{
@@ -100,6 +103,8 @@ function handleTextMsg(msg, res){
 }
 
 function handleImageMsg(msg, res){
+    console.log('handleImageMsg: ');
+    console.dir(msg);
     AV.Cloud.run('savePictureForWechatUser', {picUrl:result.xml.PicUrl, userId:result.xml.FromUserName}, {
         success: function(result) {
             res.set('Content-Type', 'text/xml');
@@ -112,13 +117,16 @@ function handleImageMsg(msg, res){
 }
 
 function replyTextMessage(msg, res, txt){
-    res.render('wechatResponseMessage', {
+    var reply = {
         ToUserName: msg.FromUserName,
         FromUserName: msg.ToUserName,
         CreateTime: new Date().getTime(),
         MsgType: 'text',
         Content: txt
-    });
+    };
+    console.log('replyTextMessage: ');
+    console.dir(reply);
+    res.render('wechatResponseMessage', reply);
 }
 
 module.exports.isLegel=isLegel;
