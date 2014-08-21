@@ -54,7 +54,7 @@ Weixin.init = function (options) {
  * @returns {*}
  */
 Weixin.prototype.handleMsgErr = function () {
-    emitter.on('MsgErr', this.err);
+    emitter.emit('MsgErr', this.err);
     return this;
 };
 
