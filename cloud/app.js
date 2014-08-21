@@ -26,7 +26,7 @@ app.get('/weixin', function(req, res){
 });
 
 app.post('/weixin', function(req, res){
-    console.log('Handling POST request to /wechatCallback...');
+    console.log('Handling POST request to /weixin...');
     myWeixinAPI.logRequestMainContent(req);
     myWeixinAPI.validateSignature(req, res);
 
@@ -40,7 +40,7 @@ app.post('/weixin', function(req, res){
 
 app.get('/wechatCallback', function(req, res) {
     console.log('Handling GET request to /wechatCallback...');
-    myWeixinAPI.validateSignature(req, res);
+    weixinAPI.token(req, res);
 });
 
 app.post('/wechatCallback', function(req, res) {
