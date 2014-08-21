@@ -4,36 +4,12 @@ var app = express();
 
 var util = require('util');
 var myWeixinAPI = require('cloud/myWeixinAPI.js');
+var weixinAPI = require('cloud/node-weixin/weixinAPI.js')
 
 // App 全局配置
 app.set('views','cloud/views');   // 设置模板目录
 app.set('view engine', 'ejs');    // 设置 template 引擎
 app.use(express.bodyParser());    // 读取请求 body 的中间件
-
-
-
-var weixin = require('cloud/node-weixin/index.js').init({
-    url: '/wechat',
-    token: 'RobinKam'
-});
-
-weixin.errMsg(function (err) {
-    console.log(err);
-});
-
-/**
- * 监听广本消息
- */
-weixin.textMsg(function (msg) {
-    weixin.postMsg({
-        FromUserName: msg.ToUserName,
-        ToUserName: msg.FromUserName,
-        CreateTime: new Date().getTime(),
-        MsgType: 'text',
-        Content: '哈哈'   //广本内容
-    });
-    console.log(msg);
-});
 
 // 使用 Express 路由 API 服务 /hello 的 HTTP GET 请求
 app.get('/hello', function(req, res) {
@@ -42,6 +18,14 @@ app.get('/hello', function(req, res) {
         res.render('hello', { message: 'Hello, '+username });
     else
         res.render('hello', { message: 'Hello, Guest'})
+});
+
+app.get('/weixin', function(req, res){
+    weixinAPI.token(req, res);
+});
+
+app.post('/weixin', function(req, res){
+    weixinAPI.msg(req, res);
 });
 
 app.get('/wechatCallback', function(req, res) {
