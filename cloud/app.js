@@ -30,7 +30,14 @@ app.post('/weixin', function(req, res){
     console.log('The request headers: '+util.inspect(req.headers));
     console.log('The request query: '+util.inspect(req.query));
 
-    weixinAPI.token(req, res);
+    var isSignatureValid=myWeixinAPI.isSignatureValid(req);
+    console.log('Verify Signature Result: '+isSignatureValid);
+    if(!isSignatureValid){
+        res.write('Signature validation failed.');
+        res.end();
+        return;
+    }
+
     weixinAPI.msg(req, res);
 });
 
