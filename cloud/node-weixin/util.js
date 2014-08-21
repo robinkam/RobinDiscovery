@@ -5,7 +5,7 @@
  * Time: 下午12:40
  * To change this template use File | Settings | File Templates.
  */
-var BufferHelper = require('cloud/node-weixin/bufferhelper');
+var BufferHelper = require('cloud/node-weixin/bufferhelper.js');
 var urlParse = require('url').parse;
 
 exports.httpHandle = function (url, method, header, postData, callback) {

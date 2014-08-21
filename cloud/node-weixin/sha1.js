@@ -1,7 +1,7 @@
 (function() {
-  var crypt = require('cloud/node-weixin/crypt'),
-      utf8 = require('cloud/node-weixin/charenc').utf8,
-      bin = require('cloud/node-weixin/charenc').bin,
+  var crypt = require('cloud/node-weixin/crypt.js'),
+      utf8 = require('cloud/node-weixin/charenc.js').utf8,
+      bin = require('cloud/node-weixin/charenc.js').bin,
 
   // The core
   sha1 = function (message) {

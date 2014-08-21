@@ -7,13 +7,13 @@
  */
 
 var fs = require('fs');
-var sha1 = require('cloud/node-weixin/sha1');
-var BufferHelper = require('cloud/node-weixin/bufferhelper');
+var sha1 = require('cloud/node-weixin/sha1.js');
+var BufferHelper = require('cloud/node-weixin/bufferhelper.js');
 var xml2js = require('xml2js');
 var events = require('events');
 var emitter = new events.EventEmitter();
-var httpHandle = require('cloud/node-weixin/util').httpHandle;
-var weixinMsgXml = require('cloud/node-weixin/weixinMsgXml').weixinMsgXml;
+var httpHandle = require('cloud/node-weixin/util.js').httpHandle;
+var weixinMsgXml = require('cloud/node-weixin/weixinMsgXml.js').weixinMsgXml;
 
 /**
  * 微信类，实现微信的所有接口
