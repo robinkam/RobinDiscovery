@@ -21,10 +21,12 @@ app.get('/hello', function(req, res) {
 });
 
 app.get('/weixin', function(req, res){
+    console.log('Handling GET request to /weixin...');
     weixinAPI.token(req, res);
 });
 
 app.post('/weixin', function(req, res){
+    console.log('Handling POST request to /wechatCallback...');
     myWeixinAPI.logRequestMainContent(req);
     myWeixinAPI.validateSignature(req, res);
 
@@ -37,19 +39,12 @@ app.post('/weixin', function(req, res){
 
 
 app.get('/wechatCallback', function(req, res) {
-    console.log('Handling GET request...');
-    var echostr=req.query.echostr;
-    var isSignatureValid=myWeixinAPI.isSignatureValid(req);
-    console.log('Verify Signature Result: '+isSignatureValid);
-    if(isSignatureValid){
-        res.write(echostr);
-    }else{
-        res.write('Signature validation failed.');
-    }
-    res.end();
+    console.log('Handling GET request to /wechatCallback...');
+    myWeixinAPI.validateSignature(req, res);
 });
 
 app.post('/wechatCallback', function(req, res) {
+    console.log('Handling POST request to /wechatCallback...');
     myWeixinAPI.logRequestMainContent(req);
     myWeixinAPI.validateSignature(req, res);
     myWeixinAPI.processMessage(req, res);
