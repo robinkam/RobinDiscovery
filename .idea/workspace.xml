@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="75e22018-aa77-44cf-a823-024beed3cec1" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/app.js" afterPath="$PROJECT_DIR$/cloud/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/node-weixin/weixinAPI.js" afterPath="$PROJECT_DIR$/cloud/node-weixin/weixinAPI.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RobinDiscovery.iws" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1110">
-              <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -39,8 +40,8 @@
       <file leaf-file-name="node-weixin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud/node-weixin/node-weixin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.769231" vertical-offset="690" max-vertical-offset="8505">
-              <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+            <state vertical-scroll-proportion="-8.0" vertical-offset="7127" max-vertical-offset="8505">
+              <caret line="489" column="18" selection-start-line="489" selection-start-column="15" selection-end-line="489" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -49,10 +50,10 @@
       <file leaf-file-name="weixinAPI.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloud/node-weixin/weixinAPI.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.8514378" vertical-offset="1860" max-vertical-offset="2505">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.45527157" vertical-offset="0" max-vertical-offset="2505">
+              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
               <folding>
-                <element signature="e#169#186#0" expanded="false" />
+                <element signature="e#163#180#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -81,10 +82,10 @@
         <option value="$PROJECT_DIR$/cloud/wechat.js" />
         <option value="$PROJECT_DIR$/cloud/node-wechat/node-wechat.js" />
         <option value="$PROJECT_DIR$/cloud/node-weixin/index.js" />
-        <option value="$PROJECT_DIR$/cloud/node-weixin/weixinAPI.js" />
         <option value="$PROJECT_DIR$/cloud/node-weixin/sha1.js" />
         <option value="$PROJECT_DIR$/cloud/node-weixin/util.js" />
         <option value="$PROJECT_DIR$/cloud/node-weixin/node-weixin.js" />
+        <option value="$PROJECT_DIR$/cloud/node-weixin/weixinAPI.js" />
         <option value="$PROJECT_DIR$/cloud/app.js" />
       </list>
     </option>
@@ -440,7 +441,11 @@
       <created>1408588296454</created>
       <updated>1408588296454</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="add debug log.">
+      <created>1408588768323</created>
+      <updated>1408588768323</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -502,7 +507,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="change the route to /wechatCallback instead of /wechatCallback/wechatResponseMessage" />
     <MESSAGE value="fixed the xml parsing issue." />
     <MESSAGE value="correct the response message format." />
     <MESSAGE value="try to fix the issue that no response from Wechat" />
@@ -527,7 +531,8 @@
     <MESSAGE value="correct the usage of the third party node-weixin library." />
     <MESSAGE value="add .js at the end of require to try to fix the no response issue." />
     <MESSAGE value="fixed a bug." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed a bug." />
+    <MESSAGE value="add debug log." />
+    <option name="LAST_COMMIT_MESSAGE" value="add debug log." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -725,28 +730,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/WebStorm8/extLibs/nodejs-v0.10.29-src/core-modules-sources/lib/_linklist.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.04601227" vertical-offset="0" max-vertical-offset="945">
+          <caret line="21" column="9" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cloud/node-weixin/node-weixin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.769231" vertical-offset="690" max-vertical-offset="8505">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
+        <state vertical-scroll-proportion="-8.0" vertical-offset="7127" max-vertical-offset="8505">
+          <caret line="489" column="18" selection-start-line="489" selection-start-column="15" selection-end-line="489" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1110">
-          <caret line="28" column="15" selection-start-line="28" selection-start-column="15" selection-end-line="28" selection-end-column="15" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/node-weixin/weixinAPI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8514378" vertical-offset="1860" max-vertical-offset="2505">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.45527157" vertical-offset="0" max-vertical-offset="2505">
+          <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
           <folding>
-            <element signature="e#169#186#0" expanded="false" />
+            <element signature="e#163#180#0" expanded="false" />
           </folding>
         </state>
       </provider>

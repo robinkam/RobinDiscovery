@@ -1,5 +1,5 @@
 var weixin = require('cloud/node-weixin/node-weixin.js').init({
-    url: '/weixin',
+    url: '/',
     token: 'RobinKam'
 });
 
