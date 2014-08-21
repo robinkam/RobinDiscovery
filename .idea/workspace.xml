@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="75e22018-aa77-44cf-a823-024beed3cec1" name="Default" comment="added debug log.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/app.js" afterPath="$PROJECT_DIR$/cloud/app.js" />
+    <list default="true" id="75e22018-aa77-44cf-a823-024beed3cec1" name="Default" comment="disa">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cloud/node-weixin/node-weixin.js" afterPath="$PROJECT_DIR$/cloud/node-weixin/node-weixin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RobinDiscovery.iws" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cloud/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5858896" vertical-offset="188" max-vertical-offset="1290">
-              <caret line="38" column="5" selection-start-line="32" selection-start-column="17" selection-end-line="38" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.88496935" vertical-offset="623" max-vertical-offset="1290">
+              <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -39,8 +39,8 @@
       <file leaf-file-name="node-weixin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cloud/node-weixin/node-weixin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.538462" vertical-offset="5627" max-vertical-offset="8505">
-              <caret line="409" column="32" selection-start-line="409" selection-start-column="32" selection-end-line="409" selection-end-column="32" />
+            <state vertical-scroll-proportion="-21.192308" vertical-offset="7864" max-vertical-offset="8505">
+              <caret line="561" column="24" selection-start-line="561" selection-start-column="24" selection-end-line="561" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -466,7 +466,11 @@
       <created>1408590197068</created>
       <updated>1408590197068</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="use my signature checking logic for /weixin.">
+      <created>1408593704054</created>
+      <updated>1408593704054</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
@@ -528,7 +532,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="refined the console log for debug." />
     <MESSAGE value="log request object to debug" />
     <MESSAGE value="log request header, query and body to debug" />
     <MESSAGE value="refined the log of request header, query and body to debug" />
@@ -553,7 +556,8 @@
     <MESSAGE value="fixed a potential bug." />
     <MESSAGE value="add signature checking in handling post to /weixin." />
     <MESSAGE value="added debug log." />
-    <option name="LAST_COMMIT_MESSAGE" value="added debug log." />
+    <MESSAGE value="use my signature checking logic for /weixin." />
+    <option name="LAST_COMMIT_MESSAGE" value="use my signature checking logic for /weixin." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -779,16 +783,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/node-weixin/node-weixin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.538462" vertical-offset="5627" max-vertical-offset="8505">
-          <caret line="409" column="32" selection-start-line="409" selection-start-column="32" selection-end-line="409" selection-end-column="32" />
+        <state vertical-scroll-proportion="-21.192308" vertical-offset="7864" max-vertical-offset="8505">
+          <caret line="561" column="24" selection-start-line="561" selection-start-column="24" selection-end-line="561" selection-end-column="24" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cloud/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5858896" vertical-offset="188" max-vertical-offset="1290">
-          <caret line="38" column="5" selection-start-line="32" selection-start-column="17" selection-end-line="38" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.88496935" vertical-offset="623" max-vertical-offset="1290">
+          <caret line="80" column="13" selection-start-line="80" selection-start-column="13" selection-end-line="80" selection-end-column="13" />
           <folding />
         </state>
       </provider>

@@ -6,7 +6,7 @@
  * To change this template use File | Settings | File Templates.
  */
 
-var fs = require('fs');
+//var fs = require('fs');
 var sha1 = require('cloud/node-weixin/sha1.js');
 var BufferHelper = require('cloud/node-weixin/bufferhelper.js');
 var xml2js = require('xml2js');
