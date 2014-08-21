@@ -2,6 +2,8 @@ var crypto=require("crypto");
 var xml2js = require('xml2js');
 var util = require('util');
 
+var currentWechatPublicAccountId = '';
+
 function isLegel(signature,timestamp,nonce,token){
     var array=new Array();
     array[0]=timestamp;
@@ -57,6 +59,8 @@ function processMessage(req,res){
                 console.log('XML to JSON Result: ')
                 console.dir(result);
 
+                currentWechatPublicAccountId = result.xml.ToUserName;
+
                 var MsgType = result.xml.MsgType;
                 if(MsgType=='text'){
                     handleTextMsg(result.xml, res);   //文本消息
@@ -95,7 +99,8 @@ function processMessage(req,res){
 function handleTextMsg(msg, res){
     console.log('handleTextMsg: '+util.inspect(msg));
     if(msg.Content=='我的照片'){
-        replyTextMessage(msg, res, '不好意思，这个功能还在开发中哦~');
+//        replyTextMessage(msg, res, '不好意思，这个功能还在开发中哦~');
+        getPictureByWechatMessage(msg, res);
     }else{
         replyTextMessage(msg, res, '请发送上传一张照片，丽之为您定制礼物哦~');
     }
@@ -103,6 +108,7 @@ function handleTextMsg(msg, res){
 
 function handleImageMsg(msg, res){
     console.log('handleImageMsg: '+util.inspect(msg));
+    savePictureForWechatUser(msg, res);
 //    AV.Cloud.run('savePictureForWechatUser', {picUrl:msg.PicUrl, userId:msg.FromUserName}, {
 //        success: function(result) {
 //            replyTextMessage(msg, res, '图片已上传成功，回复"我的照片"查看最后一张上传的照片。')
@@ -112,6 +118,33 @@ function handleImageMsg(msg, res){
 //            console.dir(error);
 //        }
 //    });
+}
+
+function replyTextMessage(msg, res, txt){
+    var reply = {
+        ToUserName: msg.FromUserName,
+        FromUserName: msg.ToUserName,
+        CreateTime: new Date().getTime(),
+        MsgType: 'text',
+        Content: txt
+    };
+    console.log('replyTextMessage: '+util.inspect(reply));
+    res.render('wechatTextReplyMessage', reply);
+}
+
+function replyImageMessage(msg, res, wechatUserAsset){
+    var reply = {
+        ToUserName: msg.FromUserName,
+        FromUserName: msg.ToUserName,
+        CreateTime: new Date().getTime(),
+        MsgType: 'image',
+        MediaId: wechatUserAsset.mediaId
+    };
+    console.log('replyImageMessage: '+util.inspect(reply));
+    res.render('wechatImageReplyMessage', reply);
+}
+
+function savePictureForWechatUser(msg, res){
     if(msg.PicUrl.count==0){
         console.log('No PicUrl');
         return;
@@ -121,6 +154,7 @@ function handleImageMsg(msg, res){
         // The file has been saved to AV.
         var avObject = new AV.Object("WechatUserAsset");
         avObject.set("userId", msg.FromUserName[0]);
+        avObject.set("mediaId", msg.MediaId[0]);
         avObject.set("type", 'image');
         avObject.set("asset", file);
         avObject.save().then(function(){
@@ -134,16 +168,24 @@ function handleImageMsg(msg, res){
     });
 }
 
-function replyTextMessage(msg, res, txt){
-    var reply = {
-        ToUserName: msg.FromUserName,
-        FromUserName: msg.ToUserName,
-        CreateTime: new Date().getTime(),
-        MsgType: 'text',
-        Content: txt
-    };
-    console.log('replyTextMessage: '+util.inspect(reply));
-    res.render('wechatResponseMessage', reply);
+function getPictureByWechatMessage(msg, res){
+    var WechatUserAsset = AV.Object.extend("WechatUserAsset");
+    var query = new AV.Query(WechatUserAsset);
+    query.equalTo("userId", msg.FromUserName[0]);
+    query.addDescending("createdAt");
+    query.find({
+        success: function(results) {
+            // Do something with the returned AV.Object values
+            if(results.length>0){
+                replyImageMessage(msg, res, results[0]._serverData);
+            }else{
+                replyTextMessage(msg, res, '您最近没有发过图片哦~');
+            }
+        },
+        error: function(error) {
+            console.log("Error: " + error.code + " " + error.message);
+        }
+    });
 }
 
 module.exports.isLegel=isLegel;

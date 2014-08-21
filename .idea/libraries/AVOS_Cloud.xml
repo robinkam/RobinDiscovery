@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="AVOS Cloud" type="javaScript">
+    <properties>
+      <option name="frameworkName" value="node_modules" />
+      <sourceFilesUrls>
+        <item url="file:///usr/local/lib/node_modules/avoscloud-code" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file:///usr/local/lib/node_modules/avoscloud-code" />
+    </CLASSES>
+    <DOCUMENTATION>
+      <root url="https://cn.avoscloud.com/docs/api/javascript/" />
+    </DOCUMENTATION>
+    <SOURCES />
+  </library>
+</component>
