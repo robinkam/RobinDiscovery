@@ -2,8 +2,6 @@ var crypto=require("crypto");
 var xml2js = require('xml2js');
 var util = require('util');
 
-var currentWechatPublicAccountId = '';
-
 function isLegel(signature,timestamp,nonce,token){
     var array=new Array();
     array[0]=timestamp;
@@ -29,13 +27,11 @@ function validateSignature(req, res){
     var isSignatureValid = isLegel(signature, timestamp, nonce, token);
     console.log('Verify Signature Result: '+isSignatureValid);
     if(!isSignatureValid){
-        res.write('Signature validation failed.');
-        res.end();
+        res.send('Signature validation failed.');
     }
 }
 
 function logRequestMainContent(req){
-    console.log('Handling POST request...');
     console.log('The request original URL: '+req.originalUrl);
     console.log('The request headers: '+util.inspect(req.headers));
     console.log('The request query: '+util.inspect(req.query));
@@ -52,14 +48,10 @@ function processMessage(req,res){
         console.log('Got post body: '+xml);
         parseString(xml, function (err, result) {
             if(err){
-                console.log('XML Parsing Error: ');
-                console.dir(err);
-                res.write('XML to JSON failed with Error: '+console.dir(err));
+                console.log('XML Parsing Error: '+util.inspect(err));
+                res.send('XML to JSON failed with Error: '+util.inspect(err));
             }else{
-                console.log('XML to JSON Result: ')
-                console.dir(result);
-
-                currentWechatPublicAccountId = result.xml.ToUserName;
+                console.log('XML to JSON Result: '+util.inspect(result));
 
                 var MsgType = result.xml.MsgType;
                 if(MsgType=='text'){
@@ -91,7 +83,7 @@ function processMessage(req,res){
 //                        break;
 //                }
             }
-            res.end();
+
         });
     });
 }
