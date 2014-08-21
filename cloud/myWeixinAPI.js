@@ -163,7 +163,7 @@ function getPictureByWechatMessage(msg, res){
     var WechatUserAsset = AV.Object.extend("WechatUserAsset");
     var query = new AV.Query(WechatUserAsset);
     query.equalTo("userId", msg.FromUserName[0]);
-    query.addDescending("createdAt");
+    query.descending("createdAt");
     query.find({
         success: function(results) {
             // Do something with the returned AV.Object values
