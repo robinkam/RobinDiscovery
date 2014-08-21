@@ -33,7 +33,7 @@ app.post('/weixin', function(req, res){
     try{
         weixinAPI.msg(req, res);
     }catch (error){
-        console.log('Error when executing weixinAPI.msg(req, res);\n'+error);
+        console.log('Error when executing weixinAPI.msg(req, res);\n'+util.inspect(error));
     }
 });
 
@@ -48,8 +48,8 @@ app.post('/wechatCallback', function(req, res) {
     myWeixinAPI.validateSignature(req, res);
     try {
         myWeixinAPI.processMessage(req, res);
-    }catch (erro){
-        console.log('Error when executing myWeixinAPI.processMessage(req, res);\n'+error);
+    }catch (error){
+        console.log('Error when executing myWeixinAPI.processMessage(req, res);\n'+util.inspect(error));
     }
 });
 
