@@ -37,6 +37,16 @@ function logRequestMainContent(req){
     console.log('The request query: '+util.inspect(req.query));
 }
 
+function endResponseWithMessage(msg, res){
+    console.log(msg);
+    res.send(msg);
+}
+
+function endResponseWithError(when, error, res){
+    console.log('Error ('+util.inspect(error)+') occurred when '+when);
+    res.send('Something went wrong.');
+}
+
 function processMessage(req,res){
     var formData="";
     req.on("data",function(data){
@@ -48,8 +58,7 @@ function processMessage(req,res){
         console.log('Got post body: '+xml);
         parseString(xml, function (err, result) {
             if(err){
-                console.log('XML Parsing Error: '+util.inspect(err));
-                res.send('XML to JSON failed with Error: '+util.inspect(err));
+                endResponseWithError('XML to JSON failed', err, res);
             }else{
                 console.log('XML to JSON Result: '+util.inspect(result));
 
@@ -100,15 +109,6 @@ function handleTextMsg(msg, res){
 function handleImageMsg(msg, res){
     console.log('handleImageMsg: '+util.inspect(msg));
     savePictureForWechatUser(msg, res);
-//    AV.Cloud.run('savePictureForWechatUser', {picUrl:msg.PicUrl, userId:msg.FromUserName}, {
-//        success: function(result) {
-//            replyTextMessage(msg, res, '图片已上传成功，回复"我的照片"查看最后一张上传的照片。')
-//        },
-//        error: function(error) {
-//            console.log('AV.Cloud.run(savePictureForWechatUser) failed with error: ');
-//            console.dir(error);
-//        }
-//    });
 }
 
 function replyTextMessage(msg, res, txt){
@@ -137,25 +137,62 @@ function replyImageMessage(msg, res, wechatUserAsset){
 
 function savePictureForWechatUser(msg, res){
     if(msg.PicUrl.count==0){
-        console.log('No PicUrl');
+        endResponseWithMessage('No PicUrl', res);
         return;
     }
-    var file = AV.File.withURL('photo.jpg', msg.PicUrl[0]);
-    file.save().then(function() {
-        // The file has been saved to AV.
-        var avObject = new AV.Object("WechatUserAsset");
-        avObject.set("userId", msg.FromUserName[0]);
-        avObject.set("mediaId", msg.MediaId[0]);
-        avObject.set("type", 'image');
-        avObject.set("asset", file);
-        avObject.save().then(function(){
-            replyTextMessage(msg, res, '图片已上传成功，回复"我的照片"查看最后一张上传的照片。');
-        }, function(error){
-            console.log('Error when saving WechatUserAsset object: '+util.inspect(error));
-        });
-    }, function(error) {
-        // The file either could not be read, or could not be saved to AV.
-        console.log('Error when saving picture for Wechat user: '+util.inspect(error));
+    //先查找有没有重复的图片
+    var WechatUserAsset = AV.Object.extend("WechatUserAsset");
+    var query = new AV.Query(WechatUserAsset);
+    query.equalTo("userId", msg.FromUserName[0]);
+    query.equalTo("assetUrl", msg.PicUrl[0]);
+    query.find({
+        success: function(results) {
+            // Do something with the returned AV.Object values
+            if (results.length>0){//找到重复图片，则什么也不做
+                endResponseWithMessage('Picture existed for user: '+msg.FromUserName+' with URL: '+msg.PicUrl, res);
+                return;
+            }else{//没有重复图片，则存入数据库
+                var file = AV.File.withURL('photo.jpg', msg.PicUrl[0]);
+                file.save().then(function() {
+                    // The file has been saved to AV.
+                    var avObject = new AV.Object("WechatUserAsset");
+                    avObject.set("type", 'image');
+                    avObject.set("userId", msg.FromUserName[0]);
+                    avObject.set("msgId", msg.MsgId[0]);
+                    avObject.set("createTime", msg.CreateTime[0]);
+                    avObject.set("mediaId", msg.MediaId[0]);
+                    avObject.set("assetUrl", msg.PicUrl[0]);
+                    avObject.set("asset", file);
+                    avObject.save().then(function(){
+                        replyTextMessage(msg, res, '图片已上传成功，回复"我的照片"查看最后一张上传的照片。');
+                    }, function(error){
+                        endResponseWithError('saving WechatUserAsset object', error, res);
+                    });
+                }, function(error) {
+                    // The file either could not be read, or could not be saved to AV.
+                    endResponseWithError('saving picture for Wechat user', error, res);
+                });
+            }
+        },
+        error: function(error) {
+            endResponseWithError('finding WechatUserAsset object', error, res);
+        }
+    });
+}
+
+function findExistedPictureByWechatMessage(msg, res){
+    var WechatUserAsset = AV.Object.extend("WechatUserAsset");
+    var query = new AV.Query(WechatUserAsset);
+    query.equalTo("userId", msg.FromUserName[0]);
+    query.equalTo("assetUrl", msg.PicUrl[0]);
+    query.find({
+        success: function(results) {
+            // Do something with the returned AV.Object values
+            return results.length>0;
+        },
+        error: function(error) {
+            endResponseWithError("findExistedPictureByWechatMessage", error, res);
+        }
     });
 }
 
@@ -174,7 +211,7 @@ function getPictureByWechatMessage(msg, res){
             }
         },
         error: function(error) {
-            console.log("Error: " + error.code + " " + error.message);
+            endResponseWithError("getPictureByWechatMessage", error, res);
         }
     });
 }
