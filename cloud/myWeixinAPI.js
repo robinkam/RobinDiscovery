@@ -67,6 +67,8 @@ function processMessage(req,res){
                     handleTextMsg(result.xml, res);   //文本消息
                 }else if(MsgType=='image'){
                     handleImageMsg(result.xml, res);  //图片消息
+                }else if(MsgType=='event'){
+                    handleEventMsg(result.xml, res);    //事件消息
                 }
 //                switch (MsgType) {
 //                    case 'text':
@@ -109,6 +111,13 @@ function handleTextMsg(msg, res){
 function handleImageMsg(msg, res){
     console.log('handleImageMsg: '+util.inspect(msg));
     savePictureForWechatUser(msg, res);
+}
+
+function handleEventMsg(msg, res){
+    var event = msg.Event;
+    if(event=='subscribe'){
+        replyTextMessage(msg, res, '欢迎关注！请发送上传一张照片，丽之为您定制礼物哦~');
+    }
 }
 
 function replyTextMessage(msg, res, txt){
