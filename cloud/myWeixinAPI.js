@@ -228,4 +228,6 @@ function getPictureByWechatMessage(msg, res){
 module.exports.isLegel=isLegel;
 module.exports.validateSignature=validateSignature;
 module.exports.logRequestMainContent = logRequestMainContent;
+module.exports.endResponseWithMessage = endResponseWithMessage;
+module.exports.endResponseWithError = endResponseWithError;
 module.exports.processMessage=processMessage;
