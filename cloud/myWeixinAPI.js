@@ -104,7 +104,7 @@ function handleTextMsg(msg, res){
 //        replyTextMessage(msg, res, '不好意思，这个功能还在开发中哦~');
         getPictureByWechatMessage(msg, res);
     }else{
-        replyTextMessage(msg, res, '请发送上传一张照片，丽之为您定制礼物哦~');
+        replyTextMessage(msg, res, '请发送上传一张照片作为你的聚乐部头像哦~');//请发送上传一张照片，丽之为您定制礼物哦~
     }
 }
 
@@ -116,7 +116,7 @@ function handleImageMsg(msg, res){
 function handleEventMsg(msg, res){
     var event = msg.Event;
     if(event=='subscribe'){
-        replyTextMessage(msg, res, '欢迎关注！请发送上传一张照片，丽之为您定制礼物哦~');
+        replyTextMessage(msg, res, '欢迎关注！请发送上传一张照片作为你的聚乐部头像哦~');//欢迎关注！请发送上传一张照片，丽之为您定制礼物哦~
     }
 }
 
